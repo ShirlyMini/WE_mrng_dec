@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.5 on win32)" generated="2024-03-17T10:09:12.206860" rpa="false" schemaversion="5">
+<suite id="s1" name="Test login" source="C:\Users\user\PycharmProjects\pythonProject_WEMorning_dec\hybrid_framework_robot\TestCases_robot\Test_login.robot">
+<test id="s1-t1" name="Test1: Verify Title" line="13">
+<kw name="NopCommerce setup" owner="resources" type="SETUP">
+<kw name="Set Log Level" owner="BuiltIn">
+<msg time="2024-03-17T10:09:12.755109" level="DEBUG">Log level changed from INFO to TRACE.</msg>
+<msg time="2024-03-17T10:09:12.756108" level="TRACE">Return: 'INFO'</msg>
+<arg>Trace</arg>
+<doc>Sets the log threshold to the specified level.</doc>
+<status status="PASS" start="2024-03-17T10:09:12.755109" elapsed="0.000999"/>
+</kw>
+<kw name="Launch Browser" owner="conftest">
+<msg time="2024-03-17T10:09:12.756108" level="TRACE">Arguments: [ 'chrome' ]</msg>
+<msg time="2024-03-17T10:09:12.790078" level="DEBUG">Started executable: `E:\selenium\drivers\chromedriver.exe` in a child process with pid: 19708 using 0 to output -3</msg>
+<msg time="2024-03-17T10:09:13.319766" level="DEBUG">POST http://localhost:57310/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}</msg>
+<msg time="2024-03-17T10:09:13.319766" level="DEBUG">Starting new HTTP connection (1): localhost:57310</msg>
+<msg time="2024-03-17T10:09:14.743856" level="DEBUG">http://localhost:57310 "POST /session HTTP/1.1" 200 0</msg>
+<msg time="2024-03-17T10:09:14.743856" level="DEBUG">Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"122.0.6261.129","chrome":{"chromedriverVersion":"122.0.6261.69 (81bc525b6a36d91ed7fe98a4b53c6f53c79adbb2-refs/branch-heads/6261_57@{#3})","userDataDir":"C:\\Users\\user\\AppData\\Local\\Temp\\scoped_dir19708_2098395072"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:57315"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"718f9f26f746ffa58827284de8cd38fb"}} | headers=HTTPHeaderDict({'Content-Length': '882', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-03-17T10:09:14.743856" level="DEBUG">Finished Request</msg>
+<msg time="2024-03-17T10:09:14.744855" level="DEBUG">POST http://localhost:57310/session/718f9f26f746ffa58827284de8cd38fb/url {"url": "https://admin-demo.nopcommerce.com/"}</msg>
+<msg time="2024-03-17T10:09:24.060856" level="DEBUG">http://localhost:57310 "POST /session/718f9f26f746ffa58827284de8cd38fb/url HTTP/1.1" 200 0</msg>
+<msg time="2024-03-17T10:09:24.061856" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-03-17T10:09:24.061856" level="DEBUG">Finished Request</msg>
+<msg time="2024-03-17T10:09:24.061856" level="DEBUG">POST http://localhost:57310/session/718f9f26f746ffa58827284de8cd38fb/window/maximize {}</msg>
+<msg time="2024-03-17T10:09:24.226399" level="DEBUG">http://localhost:57310 "POST /session/718f9f26f746ffa58827284de8cd38fb/window/maximize HTTP/1.1" 200 0</msg>
+<msg time="2024-03-17T10:09:24.227399" level="DEBUG">Remote response: status=200 | data={"value":{"height":744,"width":1382,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '51', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-03-17T10:09:24.227399" level="DEBUG">Finished Request</msg>
+<msg time="2024-03-17T10:09:24.227399" level="DEBUG">POST http://localhost:57310/session/718f9f26f746ffa58827284de8cd38fb/timeouts {"implicit": 20000}</msg>
+<msg time="2024-03-17T10:09:24.228399" level="DEBUG">http://localhost:57310 "POST /session/718f9f26f746ffa58827284de8cd38fb/timeouts HTTP/1.1" 200 0</msg>
+<msg time="2024-03-17T10:09:24.229395" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-03-17T10:09:24.229395" level="DEBUG">Finished Request</msg>
+<msg time="2024-03-17T10:09:24.229395" level="TRACE">Return: &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="718f9f26f746ffa58827284de8cd38fb")&gt;</msg>
+<msg time="2024-03-17T10:09:24.229395" level="INFO">${driver} = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="718f9f26f746ffa58827284de8cd38fb")&gt;</msg>
+<var>${driver}</var>
+<arg>${browser}</arg>
+<status status="PASS" start="2024-03-17T10:09:12.756108" elapsed="11.473287"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2024-03-17T10:09:24.230394" level="TRACE">Arguments: [ '${driver}' ]</msg>
+<msg time="2024-03-17T10:09:24.230394" level="INFO">${driver} = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="718f9f26f746ffa58827284de8cd38fb")&gt;</msg>
+<msg time="2024-03-17T10:09:24.230394" level="TRACE">Return: None</msg>
+<arg>${driver}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2024-03-17T10:09:24.229395" elapsed="0.000999"/>
+</kw>
+<msg time="2024-03-17T10:09:24.230394" level="TRACE">Return: None</msg>
+<arg>chrome</arg>
+<status status="PASS" start="2024-03-17T10:09:12.754112" elapsed="11.476282"/>
+</kw>
+<kw name="Verify Title" owner="LoginPageObj">
+<msg time="2024-03-17T10:09:24.231393" level="TRACE">Arguments: [ &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="718f9f26f746ffa58827284de8cd38fb")&gt; ]</msg>
+<msg time="2024-03-17T10:09:24.232393" level="DEBUG">GET http://localhost:57310/session/718f9f26f746ffa58827284de8cd38fb/title {}</msg>
+<msg time="2024-03-17T10:09:24.238387" level="DEBUG">http://localhost:57310 "GET /session/718f9f26f746ffa58827284de8cd38fb/title HTTP/1.1" 200 0</msg>
+<msg time="2024-03-17T10:09:24.239387" level="DEBUG">Remote response: status=200 | data={"value":"Your store. Login"} | headers=HTTPHeaderDict({'Content-Length': '29', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-03-17T10:09:24.239387" level="DEBUG">Finished Request</msg>
+<msg time="2024-03-17T10:09:24.239387" level="TRACE">Return: 'Your store. Login'</msg>
+<msg time="2024-03-17T10:09:24.239387" level="INFO">${title} = Your store. Login</msg>
+<var>${title}</var>
+<arg>${driver}</arg>
+<status status="PASS" start="2024-03-17T10:09:24.231393" elapsed="0.007994"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-03-17T10:09:24.241384" level="TRACE">Arguments: [ 'Your store. Login' | console=True ]</msg>
+<msg time="2024-03-17T10:09:24.241384" level="INFO">Your store. Login</msg>
+<msg time="2024-03-17T10:09:24.242382" level="TRACE">Return: None</msg>
+<arg>${title}</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-03-17T10:09:24.240385" elapsed="0.001997"/>
+</kw>
+<kw name="Take Screenshot" owner="Screenshot">
+<msg time="2024-03-17T10:09:24.243382" level="TRACE">Arguments: [ 'title' ]</msg>
+<msg time="2024-03-17T10:09:24.252373" level="DEBUG">Using pil module/tool for taking screenshot.</msg>
+<msg time="2024-03-17T10:09:24.349284" level="INFO" html="true">&lt;a href="title_7.jpg"&gt;&lt;img src="title_7.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-03-17T10:09:24.349284" level="TRACE">Return: 'C:\\Users\\user\\PycharmProjects\\pythonProject_WEMorning_dec\\hybrid_framework_robot\\Logs\\title_7.jpg'</msg>
+<arg>title</arg>
+<doc>Takes a screenshot in JPEG format and embeds it into the log file.</doc>
+<status status="PASS" start="2024-03-17T10:09:24.243382" elapsed="0.105902"/>
+</kw>
+<kw name="NopCommerce teardown" owner="resources" type="TEARDOWN">
+<msg time="2024-03-17T10:09:24.352286" level="TRACE">Arguments: [  ]</msg>
+<kw name="Browser Teardown" owner="conftest">
+<msg time="2024-03-17T10:09:24.353281" level="TRACE">Arguments: [ &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="718f9f26f746ffa58827284de8cd38fb")&gt; ]</msg>
+<msg time="2024-03-17T10:09:24.353281" level="DEBUG">DELETE http://localhost:57310/session/718f9f26f746ffa58827284de8cd38fb {}</msg>
+<msg time="2024-03-17T10:09:25.497163" level="DEBUG">http://localhost:57310 "DELETE /session/718f9f26f746ffa58827284de8cd38fb HTTP/1.1" 200 0</msg>
+<msg time="2024-03-17T10:09:25.497163" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-03-17T10:09:25.497163" level="DEBUG">Finished Request</msg>
+<msg time="2024-03-17T10:09:27.660276" level="TRACE">Return: None</msg>
+<arg>${driver}</arg>
+<status status="PASS" start="2024-03-17T10:09:24.352286" elapsed="3.307990"/>
+</kw>
+<msg time="2024-03-17T10:09:27.660276" level="TRACE">Return: None</msg>
+<status status="PASS" start="2024-03-17T10:09:24.351283" elapsed="3.308993"/>
+</kw>
+<status status="PASS" start="2024-03-17T10:09:12.753113" elapsed="14.908174"/>
+</test>
+<test id="s1-t2" name="Test2: Verify Dashboard" line="20">
+<kw name="NopCommerce setup" owner="resources" type="SETUP">
+<msg time="2024-03-17T10:09:27.663282" level="TRACE">Arguments: [ ${browser}='chrome' ]</msg>
+<kw name="Set Log Level" owner="BuiltIn">
+<msg time="2024-03-17T10:09:27.664283" level="TRACE">Arguments: [ 'Trace' ]</msg>
+<msg time="2024-03-17T10:09:27.664283" level="DEBUG">Log level changed from TRACE to TRACE.</msg>
+<msg time="2024-03-17T10:09:27.664283" level="TRACE">Return: 'TRACE'</msg>
+<arg>Trace</arg>
+<doc>Sets the log threshold to the specified level.</doc>
+<status status="PASS" start="2024-03-17T10:09:27.664283" elapsed="0.000000"/>
+</kw>
+<kw name="Launch Browser" owner="conftest">
+<msg time="2024-03-17T10:09:27.664283" level="TRACE">Arguments: [ 'chrome' ]</msg>
+<msg time="2024-03-17T10:09:27.670278" level="DEBUG">Started executable: `E:\selenium\drivers\chromedriver.exe` in a child process with pid: 3860 using 0 to output -3</msg>
+<msg time="2024-03-17T10:09:28.184600" level="DEBUG">POST http://localhost:57336/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}</msg>
+<msg time="2024-03-17T10:09:28.184600" level="DEBUG">Starting new HTTP connection (1): localhost:57336</msg>
+<msg time="2024-03-17T10:09:29.248401" level="DEBUG">http://localhost:57336 "POST /session HTTP/1.1" 200 0</msg>
+<msg time="2024-03-17T10:09:29.248401" level="DEBUG">Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"122.0.6261.129","chrome":{"chromedriverVersion":"122.0.6261.69 (81bc525b6a36d91ed7fe98a4b53c6f53c79adbb2-refs/branch-heads/6261_57@{#3})","userDataDir":"C:\\Users\\user\\AppData\\Local\\Temp\\scoped_dir3860_61310056"},"fedcm:accounts":true,"goog:chromeOptions":{"debuggerAddress":"localhost:57339"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:extension:minPinLength":true,"webauthn:extension:prf":true,"webauthn:virtualAuthenticators":true},"sessionId":"ea551c8c5a778451f6623541fbcc0c73"}} | headers=HTTPHeaderDict({'Content-Length': '879', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-03-17T10:09:29.248401" level="DEBUG">Finished Request</msg>
+<msg time="2024-03-17T10:09:29.248401" level="DEBUG">POST http://localhost:57336/session/ea551c8c5a778451f6623541fbcc0c73/url {"url": "https://admin-demo.nopcommerce.com/"}</msg>
+<msg time="2024-03-17T10:09:36.982424" level="DEBUG">http://localhost:57336 "POST /session/ea551c8c5a778451f6623541fbcc0c73/url HTTP/1.1" 200 0</msg>
+<msg time="2024-03-17T10:09:36.982424" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-03-17T10:09:36.983423" level="DEBUG">Finished Request</msg>
+<msg time="2024-03-17T10:09:36.983423" level="DEBUG">POST http://localhost:57336/session/ea551c8c5a778451f6623541fbcc0c73/window/maximize {}</msg>
+<msg time="2024-03-17T10:09:37.149127" level="DEBUG">http://localhost:57336 "POST /session/ea551c8c5a778451f6623541fbcc0c73/window/maximize HTTP/1.1" 200 0</msg>
+<msg time="2024-03-17T10:09:37.149127" level="DEBUG">Remote response: status=200 | data={"value":{"height":744,"width":1382,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '51', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-03-17T10:09:37.150127" level="DEBUG">Finished Request</msg>
+<msg time="2024-03-17T10:09:37.150127" level="DEBUG">POST http://localhost:57336/session/ea551c8c5a778451f6623541fbcc0c73/timeouts {"implicit": 20000}</msg>
+<msg time="2024-03-17T10:09:37.151632" level="DEBUG">http://localhost:57336 "POST /session/ea551c8c5a778451f6623541fbcc0c73/timeouts HTTP/1.1" 200 0</msg>
+<msg time="2024-03-17T10:09:37.151632" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-03-17T10:09:37.151632" level="DEBUG">Finished Request</msg>
+<msg time="2024-03-17T10:09:37.151632" level="TRACE">Return: &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="ea551c8c5a778451f6623541fbcc0c73")&gt;</msg>
+<msg time="2024-03-17T10:09:37.152636" level="INFO">${driver} = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="ea551c8c5a778451f6623541fbcc0c73")&gt;</msg>
+<var>${driver}</var>
+<arg>${browser}</arg>
+<status status="PASS" start="2024-03-17T10:09:27.664283" elapsed="9.488353"/>
+</kw>
+<kw name="Set Test Variable" owner="BuiltIn">
+<msg time="2024-03-17T10:09:37.152636" level="TRACE">Arguments: [ '${driver}' ]</msg>
+<msg time="2024-03-17T10:09:37.152636" level="INFO">${driver} = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="ea551c8c5a778451f6623541fbcc0c73")&gt;</msg>
+<msg time="2024-03-17T10:09:37.152636" level="TRACE">Return: None</msg>
+<arg>${driver}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<status status="PASS" start="2024-03-17T10:09:37.152636" elapsed="0.000000"/>
+</kw>
+<msg time="2024-03-17T10:09:37.152636" level="TRACE">Return: None</msg>
+<arg>chrome</arg>
+<status status="PASS" start="2024-03-17T10:09:27.663282" elapsed="9.489354"/>
+</kw>
+<kw name="Get Username" owner="ReadProperty">
+<msg time="2024-03-17T10:09:37.153634" level="TRACE">Arguments: [  ]</msg>
+<msg time="2024-03-17T10:09:37.153634" level="TRACE">Return: 'admin@yourstore.com'</msg>
+<msg time="2024-03-17T10:09:37.154633" level="INFO">${user} = admin@yourstore.com</msg>
+<var>${user}</var>
+<status status="PASS" start="2024-03-17T10:09:37.153634" elapsed="0.000999"/>
+</kw>
+<kw name="Set Email" owner="LoginPageObj">
+<msg time="2024-03-17T10:09:37.155636" level="TRACE">Arguments: [ &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="ea551c8c5a778451f6623541fbcc0c73")&gt; | 'admin@yourstore.com' ]</msg>
+<msg time="2024-03-17T10:09:37.155636" level="DEBUG">POST http://localhost:57336/session/ea551c8c5a778451f6623541fbcc0c73/element {"using": "css selector", "value": "[id=\"Email\"]"}</msg>
+<msg time="2024-03-17T10:09:37.206585" level="DEBUG">http://localhost:57336 "POST /session/ea551c8c5a778451f6623541fbcc0c73/element HTTP/1.1" 200 0</msg>
+<msg time="2024-03-17T10:09:37.207585" level="DEBUG">Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.687DD073335CB4B8630DC3316085BE35.d.83A82AA538A4C9444447F3A68609335D.e.2"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-03-17T10:09:37.207585" level="DEBUG">Finished Request</msg>
+<msg time="2024-03-17T10:09:37.207585" level="DEBUG">POST http://localhost:57336/session/ea551c8c5a778451f6623541fbcc0c73/element/f.687DD073335CB4B8630DC3316085BE35.d.83A82AA538A4C9444447F3A68609335D.e.2/clear {}</msg>
+<msg time="2024-03-17T10:09:37.283514" level="DEBUG">http://localhost:57336 "POST /session/ea551c8c5a778451f6623541fbcc0c73/element/f.687DD073335CB4B8630DC3316085BE35.d.83A82AA538A4C9444447F3A68609335D.e.2/clear HTTP/1.1" 200 0</msg>
+<msg time="2024-03-17T10:09:37.284513" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-03-17T10:09:37.284513" level="DEBUG">Finished Request</msg>
+<msg time="2024-03-17T10:09:37.284513" level="DEBUG">POST http://localhost:57336/session/ea551c8c5a778451f6623541fbcc0c73/element {"using": "css selector", "value": "[id=\"Email\"]"}</msg>
+<msg time="2024-03-17T10:09:37.353450" level="DEBUG">http://localhost:57336 "POST /session/ea551c8c5a778451f6623541fbcc0c73/element HTTP/1.1" 200 0</msg>
+<msg time="2024-03-17T10:09:37.353450" level="DEBUG">Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.687DD073335CB4B8630DC3316085BE35.d.83A82AA538A4C9444447F3A68609335D.e.2"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-03-17T10:09:37.353450" level="DEBUG">Finished Request</msg>
+<msg time="2024-03-17T10:09:37.354446" level="DEBUG">POST http://localhost:57336/session/ea551c8c5a778451f6623541fbcc0c73/element/f.687DD073335CB4B8630DC3316085BE35.d.83A82AA538A4C9444447F3A68609335D.e.2/value {"text": "admin@yourstore.com", "value": ["a", "d", "m", "i", "n", "@", "y", "o", "u", "r", "s", "t", "o", "r", "e", ".", "c", "o", "m"]}</msg>
+<msg time="2024-03-17T10:09:37.468341" level="DEBUG">http://localhost:57336 "POST /session/ea551c8c5a778451f6623541fbcc0c73/element/f.687DD073335CB4B8630DC3316085BE35.d.83A82AA538A4C9444447F3A68609335D.e.2/value HTTP/1.1" 200 0</msg>
+<msg time="2024-03-17T10:09:37.469341" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-03-17T10:09:37.469341" level="DEBUG">Finished Request</msg>
+<msg time="2024-03-17T10:09:37.469341" level="TRACE">Return: None</msg>
+<arg>${driver}</arg>
+<arg>${user}</arg>
+<status status="PASS" start="2024-03-17T10:09:37.154633" elapsed="0.314708"/>
+</kw>
+<kw name="Take Screenshot" owner="Screenshot">
+<msg time="2024-03-17T10:09:37.470340" level="TRACE">Arguments: [ 'email' ]</msg>
+<msg time="2024-03-17T10:09:37.474336" level="DEBUG">Using pil module/tool for taking screenshot.</msg>
+<msg time="2024-03-17T10:09:37.529738" level="INFO" html="true">&lt;a href="email_6.jpg"&gt;&lt;img src="email_6.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-03-17T10:09:37.530738" level="TRACE">Return: 'C:\\Users\\user\\PycharmProjects\\pythonProject_WEMorning_dec\\hybrid_framework_robot\\Logs\\email_6.jpg'</msg>
+<arg>email</arg>
+<doc>Takes a screenshot in JPEG format and embeds it into the log file.</doc>
+<status status="PASS" start="2024-03-17T10:09:37.470340" elapsed="0.060398"/>
+</kw>
+<kw name="Get Password" owner="ReadProperty">
+<msg time="2024-03-17T10:09:37.530738" level="TRACE">Arguments: [  ]</msg>
+<msg time="2024-03-17T10:09:37.530738" level="TRACE">Return: 'admin'</msg>
+<msg time="2024-03-17T10:09:37.531736" level="INFO">${pswd} = admin</msg>
+<var>${pswd}</var>
+<status status="PASS" start="2024-03-17T10:09:37.530738" elapsed="0.000998"/>
+</kw>
+<kw name="Set Password" owner="LoginPageObj">
+<msg time="2024-03-17T10:09:37.531736" level="TRACE">Arguments: [ &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="ea551c8c5a778451f6623541fbcc0c73")&gt; | 'admin' ]</msg>
+<msg time="2024-03-17T10:09:37.531736" level="DEBUG">POST http://localhost:57336/session/ea551c8c5a778451f6623541fbcc0c73/element {"using": "css selector", "value": "[id=\"Password\"]"}</msg>
+<msg time="2024-03-17T10:09:37.545723" level="DEBUG">http://localhost:57336 "POST /session/ea551c8c5a778451f6623541fbcc0c73/element HTTP/1.1" 200 0</msg>
+<msg time="2024-03-17T10:09:37.546721" level="DEBUG">Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.687DD073335CB4B8630DC3316085BE35.d.83A82AA538A4C9444447F3A68609335D.e.4"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-03-17T10:09:37.546721" level="DEBUG">Finished Request</msg>
+<msg time="2024-03-17T10:09:37.546721" level="DEBUG">POST http://localhost:57336/session/ea551c8c5a778451f6623541fbcc0c73/element/f.687DD073335CB4B8630DC3316085BE35.d.83A82AA538A4C9444447F3A68609335D.e.4/clear {}</msg>
+<msg time="2024-03-17T10:09:37.600739" level="DEBUG">http://localhost:57336 "POST /session/ea551c8c5a778451f6623541fbcc0c73/element/f.687DD073335CB4B8630DC3316085BE35.d.83A82AA538A4C9444447F3A68609335D.e.4/clear HTTP/1.1" 200 0</msg>
+<msg time="2024-03-17T10:09:37.600739" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-03-17T10:09:37.600739" level="DEBUG">Finished Request</msg>
+<msg time="2024-03-17T10:09:37.601738" level="DEBUG">POST http://localhost:57336/session/ea551c8c5a778451f6623541fbcc0c73/element {"using": "css selector", "value": "[id=\"Password\"]"}</msg>
+<msg time="2024-03-17T10:09:37.610731" level="DEBUG">http://localhost:57336 "POST /session/ea551c8c5a778451f6623541fbcc0c73/element HTTP/1.1" 200 0</msg>
+<msg time="2024-03-17T10:09:37.610731" level="DEBUG">Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.687DD073335CB4B8630DC3316085BE35.d.83A82AA538A4C9444447F3A68609335D.e.4"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-03-17T10:09:37.611730" level="DEBUG">Finished Request</msg>
+<msg time="2024-03-17T10:09:37.611730" level="DEBUG">POST http://localhost:57336/session/ea551c8c5a778451f6623541fbcc0c73/element/f.687DD073335CB4B8630DC3316085BE35.d.83A82AA538A4C9444447F3A68609335D.e.4/value {"text": "admin", "value": ["a", "d", "m", "i", "n"]}</msg>
+<msg time="2024-03-17T10:09:37.679667" level="DEBUG">http://localhost:57336 "POST /session/ea551c8c5a778451f6623541fbcc0c73/element/f.687DD073335CB4B8630DC3316085BE35.d.83A82AA538A4C9444447F3A68609335D.e.4/value HTTP/1.1" 200 0</msg>
+<msg time="2024-03-17T10:09:37.679667" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-03-17T10:09:37.679667" level="DEBUG">Finished Request</msg>
+<msg time="2024-03-17T10:09:37.679667" level="TRACE">Return: None</msg>
+<arg>${driver}</arg>
+<arg>${pswd}</arg>
+<status status="PASS" start="2024-03-17T10:09:37.531736" elapsed="0.147931"/>
+</kw>
+<kw name="Take Screenshot" owner="Screenshot">
+<msg time="2024-03-17T10:09:37.680667" level="TRACE">Arguments: [ 'password' ]</msg>
+<msg time="2024-03-17T10:09:37.684661" level="DEBUG">Using pil module/tool for taking screenshot.</msg>
+<msg time="2024-03-17T10:09:37.726622" level="INFO" html="true">&lt;a href="password_6.jpg"&gt;&lt;img src="password_6.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-03-17T10:09:37.726622" level="TRACE">Return: 'C:\\Users\\user\\PycharmProjects\\pythonProject_WEMorning_dec\\hybrid_framework_robot\\Logs\\password_6.jpg'</msg>
+<arg>password</arg>
+<doc>Takes a screenshot in JPEG format and embeds it into the log file.</doc>
+<status status="PASS" start="2024-03-17T10:09:37.680667" elapsed="0.046955"/>
+</kw>
+<kw name="Click Submit" owner="LoginPageObj">
+<msg time="2024-03-17T10:09:37.727622" level="TRACE">Arguments: [ &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="ea551c8c5a778451f6623541fbcc0c73")&gt; ]</msg>
+<msg time="2024-03-17T10:09:37.727622" level="DEBUG">POST http://localhost:57336/session/ea551c8c5a778451f6623541fbcc0c73/element {"using": "xpath", "value": "//button[@type='submit']"}</msg>
+<msg time="2024-03-17T10:09:37.742607" level="DEBUG">http://localhost:57336 "POST /session/ea551c8c5a778451f6623541fbcc0c73/element HTTP/1.1" 200 0</msg>
+<msg time="2024-03-17T10:09:37.742607" level="DEBUG">Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"f.687DD073335CB4B8630DC3316085BE35.d.83A82AA538A4C9444447F3A68609335D.e.7"}} | headers=HTTPHeaderDict({'Content-Length': '125', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-03-17T10:09:37.742607" level="DEBUG">Finished Request</msg>
+<msg time="2024-03-17T10:09:37.742607" level="DEBUG">POST http://localhost:57336/session/ea551c8c5a778451f6623541fbcc0c73/element/f.687DD073335CB4B8630DC3316085BE35.d.83A82AA538A4C9444447F3A68609335D.e.7/click {}</msg>
+<msg time="2024-03-17T10:09:40.014606" level="DEBUG">http://localhost:57336 "POST /session/ea551c8c5a778451f6623541fbcc0c73/element/f.687DD073335CB4B8630DC3316085BE35.d.83A82AA538A4C9444447F3A68609335D.e.7/click HTTP/1.1" 200 0</msg>
+<msg time="2024-03-17T10:09:40.014606" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-03-17T10:09:40.014606" level="DEBUG">Finished Request</msg>
+<msg time="2024-03-17T10:09:40.014606" level="TRACE">Return: None</msg>
+<arg>${driver}</arg>
+<status status="PASS" start="2024-03-17T10:09:37.727622" elapsed="2.286984"/>
+</kw>
+<kw name="Take Screenshot" owner="Screenshot">
+<msg time="2024-03-17T10:09:40.015605" level="TRACE">Arguments: [ 'submit' ]</msg>
+<msg time="2024-03-17T10:09:40.020603" level="DEBUG">Using pil module/tool for taking screenshot.</msg>
+<msg time="2024-03-17T10:09:40.373273" level="INFO" html="true">&lt;a href="submit_6.jpg"&gt;&lt;img src="submit_6.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-03-17T10:09:40.373273" level="TRACE">Return: 'C:\\Users\\user\\PycharmProjects\\pythonProject_WEMorning_dec\\hybrid_framework_robot\\Logs\\submit_6.jpg'</msg>
+<arg>submit</arg>
+<doc>Takes a screenshot in JPEG format and embeds it into the log file.</doc>
+<status status="PASS" start="2024-03-17T10:09:40.015605" elapsed="0.357668"/>
+</kw>
+<kw name="Verify Title" owner="LoginPageObj">
+<msg time="2024-03-17T10:09:40.376271" level="TRACE">Arguments: [ &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="ea551c8c5a778451f6623541fbcc0c73")&gt; ]</msg>
+<msg time="2024-03-17T10:09:40.378268" level="DEBUG">GET http://localhost:57336/session/ea551c8c5a778451f6623541fbcc0c73/title {}</msg>
+<msg time="2024-03-17T10:09:41.688365" level="DEBUG">http://localhost:57336 "GET /session/ea551c8c5a778451f6623541fbcc0c73/title HTTP/1.1" 200 0</msg>
+<msg time="2024-03-17T10:09:41.689364" level="DEBUG">Remote response: status=200 | data={"value":"Dashboard / nopCommerce administration"} | headers=HTTPHeaderDict({'Content-Length': '50', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-03-17T10:09:41.689364" level="DEBUG">Finished Request</msg>
+<msg time="2024-03-17T10:09:41.689364" level="TRACE">Return: 'Dashboard / nopCommerce administration'</msg>
+<msg time="2024-03-17T10:09:41.690367" level="INFO">${title} = Dashboard / nopCommerce administration</msg>
+<var>${title}</var>
+<arg>${driver}</arg>
+<status status="PASS" start="2024-03-17T10:09:40.375272" elapsed="1.315095"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<msg time="2024-03-17T10:09:41.691363" level="TRACE">Arguments: [ "'Dashboard / nopCommerce administration'!='Dashboard / nopCommerce administration'" | 'Fail' ]</msg>
+<msg time="2024-03-17T10:09:41.691363" level="TRACE">Return: None</msg>
+<arg>'${title}'!='Dashboard / nopCommerce administration'</arg>
+<arg>Fail</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-03-17T10:09:41.691363" elapsed="0.000000"/>
+</kw>
+<kw name="NopCommerce teardown" owner="resources" type="TEARDOWN">
+<msg time="2024-03-17T10:09:41.695358" level="TRACE">Arguments: [  ]</msg>
+<kw name="Browser Teardown" owner="conftest">
+<msg time="2024-03-17T10:09:41.695358" level="TRACE">Arguments: [ &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="ea551c8c5a778451f6623541fbcc0c73")&gt; ]</msg>
+<msg time="2024-03-17T10:09:41.696357" level="DEBUG">DELETE http://localhost:57336/session/ea551c8c5a778451f6623541fbcc0c73 {}</msg>
+<msg time="2024-03-17T10:09:43.016697" level="DEBUG">http://localhost:57336 "DELETE /session/ea551c8c5a778451f6623541fbcc0c73 HTTP/1.1" 200 0</msg>
+<msg time="2024-03-17T10:09:43.016697" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg time="2024-03-17T10:09:43.016697" level="DEBUG">Finished Request</msg>
+<msg time="2024-03-17T10:09:45.185509" level="TRACE">Return: None</msg>
+<arg>${driver}</arg>
+<status status="PASS" start="2024-03-17T10:09:41.695358" elapsed="3.490151"/>
+</kw>
+<msg time="2024-03-17T10:09:45.185509" level="TRACE">Return: None</msg>
+<status status="PASS" start="2024-03-17T10:09:41.694359" elapsed="3.491150"/>
+</kw>
+<status status="PASS" start="2024-03-17T10:09:27.662283" elapsed="17.524214"/>
+</test>
+<status status="PASS" start="2024-03-17T10:09:12.209857" elapsed="32.979638"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Test login">Test login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

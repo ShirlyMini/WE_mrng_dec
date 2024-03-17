@@ -1,0 +1,2 @@
+pytest -v -s TestCases\Test_Login.py --html=./Reports/log_hy_fw_sanity.html --capture=tee-sys -m sanity
+pytest -v -s TestCases -n=2 --html=./Reports/log_hy_fw_func.html  --capture=tee-sys -m functionality

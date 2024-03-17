@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.5 on win32)" generated="2024-03-16T21:27:30.363746" rpa="false" schemaversion="5">
+<suite id="s1" name="Login Using Python" source="C:\Users\user\PycharmProjects\pythonProject_WEMorning_dec\RobotFramework\login_using_python.robot">
+<test id="s1-t1" name="Login to nopcommerce with username and password" line="14">
+<kw name="Launch Browser" owner="conftest">
+<msg time="2024-03-16T21:27:40.950455" level="INFO">${driver} = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session="3770cc56e4061134cf66c433be9af860")&gt;</msg>
+<var>${driver}</var>
+<arg>chrome</arg>
+<status status="PASS" start="2024-03-16T21:27:31.184190" elapsed="9.767263"/>
+</kw>
+<kw name="Set Email" owner="LoginPageObj">
+<arg>${driver}</arg>
+<arg>${cred['username']}</arg>
+<status status="PASS" start="2024-03-16T21:27:40.951453" elapsed="0.238631"/>
+</kw>
+<kw name="Set Password" owner="LoginPageObj">
+<arg>${driver}</arg>
+<arg>${cred['password']}</arg>
+<status status="PASS" start="2024-03-16T21:27:41.191082" elapsed="0.127882"/>
+</kw>
+<kw name="Click Submit" owner="LoginPageObj">
+<arg>${driver}</arg>
+<status status="PASS" start="2024-03-16T21:27:41.319961" elapsed="2.470105"/>
+</kw>
+<kw name="Click Logout" owner="LoginPageObj">
+<arg>${driver}</arg>
+<status status="PASS" start="2024-03-16T21:27:43.791064" elapsed="4.181492"/>
+</kw>
+<tag>tc3</tag>
+<status status="PASS" start="2024-03-16T21:27:31.182194" elapsed="16.791361"/>
+</test>
+<status status="PASS" start="2024-03-16T21:27:30.367742" elapsed="17.609808"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">tc3</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Login Using Python">Login Using Python</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

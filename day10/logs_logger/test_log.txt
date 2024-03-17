@@ -1,0 +1,65 @@
+DEBUG:root:this is debug level
+INFO:root:this is info level
+WARNING:root:this is warn level
+ERROR:root:this is info level
+CRITICAL:root:this is critical level
+2024-02-17 09:14:41,816 DEBUG this is debug level
+2024-02-17 09:14:41,817 INFO this is info level
+2024-02-17 09:14:41,817 WARNING this is warn level
+2024-02-17 09:14:41,818 ERROR this is info level
+2024-02-17 09:14:41,818 CRITICAL this is critical level
+2024-02-17 09:18:14,703 DEBUG this is debug level <module>
+2024-02-17 09:18:14,703 INFO this is info level <module>
+2024-02-17 09:18:14,703 WARNING this is warn level <module>
+2024-02-17 09:18:14,704 ERROR this is info level <module>
+2024-02-17 09:18:14,704 CRITICAL this is critical level <module>
+2024-02-17 09:18:30,283 DEBUG this is debug level python_logger
+2024-02-17 09:18:30,283 INFO this is info level python_logger
+2024-02-17 09:18:30,283 WARNING this is warn level python_logger
+2024-02-17 09:18:30,283 ERROR this is info level python_logger
+2024-02-17 09:18:30,284 CRITICAL this is critical level python_logger
+2024-02-17 20:37:56,940 DEBUG this is debug level python_logger
+2024-02-17 20:37:56,949 INFO this is info level python_logger
+2024-02-17 20:37:56,949 WARNING this is warn level python_logger
+2024-02-17 20:37:56,949 ERROR this is info level python_logger
+2024-02-17 20:37:56,949 CRITICAL this is critical level python_logger
+2024-02-17 20:38:37,273 DEBUG this is debug level python_logger
+2024-02-17 20:38:37,274 INFO this is info level python_logger
+2024-02-17 20:38:37,274 WARNING this is warn level python_logger
+2024-02-17 20:38:37,275 ERROR this is info level python_logger
+2024-02-17 20:38:37,275 CRITICAL this is critical level python_logger
+2024-02-17 20:38:50,869 DEBUG this is debug level python_logger
+2024-02-17 20:38:50,869 INFO this is info level python_logger
+2024-02-17 20:38:50,869 WARNING this is warn level python_logger
+2024-02-17 20:38:50,870 ERROR this is info level python_logger
+2024-02-17 20:38:50,870 CRITICAL this is critical level python_logger
+2024-02-18 08:19:55,484 DEBUG this is debug level python_logger
+2024-02-18 08:19:55,494 INFO this is info level python_logger
+2024-02-18 08:19:55,494 WARNING this is warn level python_logger
+2024-02-18 08:19:55,494 ERROR this is info level python_logger
+2024-02-18 08:19:55,494 CRITICAL this is critical level python_logger
+2024-02-18 08:20:31,249 DEBUG this is debug level python_logger
+2024-02-18 08:20:31,249 INFO this is info level python_logger
+2024-02-18 08:20:31,249 WARNING this is warn level python_logger
+2024-02-18 08:20:31,250 ERROR this is info level python_logger
+2024-02-18 08:20:31,250 CRITICAL this is critical level python_logger
+2024-02-18 08:21:44,329 DEBUG this is debug level python_logger
+2024-02-18 08:21:44,330 INFO this is info level python_logger
+2024-02-18 08:21:44,330 WARNING this is warn level python_logger
+2024-02-18 08:21:44,330 ERROR this is info level python_logger
+2024-02-18 08:21:44,330 CRITICAL this is critical level python_logger
+2024-02-18 08:23:03,232 DEBUG this is debug level python_logger
+2024-02-18 08:23:03,233 INFO this is info level python_logger
+2024-02-18 08:23:03,233 WARNING this is warn level python_logger
+2024-02-18 08:23:03,233 ERROR this is info level python_logger
+2024-02-18 08:23:03,233 CRITICAL this is critical level python_logger
+2024-02-18 08:23:11,911 DEBUG this is debug level python_logger
+2024-02-18 08:23:11,912 INFO this is info level python_logger
+2024-02-18 08:23:11,912 WARNING this is warn level python_logger
+2024-02-18 08:23:11,912 ERROR this is info level python_logger
+2024-02-18 08:23:11,912 CRITICAL this is critical level python_logger
+2024-02-18 08:23:26,675 DEBUG this is debug level python_logger
+2024-02-18 08:23:26,676 INFO this is info level python_logger
+2024-02-18 08:23:26,676 WARNING this is warn level python_logger
+2024-02-18 08:23:26,676 ERROR this is info level python_logger
+2024-02-18 08:23:26,676 CRITICAL this is critical level python_logger
